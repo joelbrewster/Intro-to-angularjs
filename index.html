@@ -11,6 +11,10 @@
     <!-- {{ 1 + 1 }} -->
     <div ng-controller="HomeController as home">
       {{ home.title }}
+      <button ng-click="home.title = 'New Title for page!'">Change button</button>
+      {{ home.number }}
+      <button ng-click="home.number = home.number + 1">Add</button>
+      <button ng-click="home.number = home.number - 1">Subtract</button>
     </div>
   </body>
 </html>
